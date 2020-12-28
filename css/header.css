@@ -1,0 +1,103 @@
+.header-content {
+    position: relative;
+    height: 140px;
+}
+
+.logo {
+    width: 190px;
+    height: 120px;
+    position: absolute;
+    background-color: red;
+    top: 50%;
+    margin-top: -60px;
+}
+
+.logo_tit_lk {
+    background-image: url(//misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/sprite/header/sprite.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 190px;
+    height: 120px;
+    font-size: 0;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+.search {
+    padding-left: 200px;
+}
+
+.search-box {
+    width: 546px;
+    position: relative;
+    top: 25px;
+    left: 60px;
+    border: 2px solid #e2231a;
+    font-size: 0;
+}
+
+#search-text {
+    padding: 2px 44px 2px 17px;
+    width: 425px;
+    height: 26px;
+    border: 1px solid transparent;
+    line-height: 26px;
+    font-size: 12px;
+    outline: none;
+}
+
+#search-btn {
+    width: 58px;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    background-color: #e1251b;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    vertical-align: bottom;
+}
+
+.photo-search-btn {
+    position: absolute;
+    right: 75px;
+    font-size: 16px;
+    top: 8px;
+}
+
+.search-results {
+    position: absolute;
+    top: 36px;
+    font-size: 12px;
+    width: 488px;
+    left: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1;
+    display: none;
+}
+
+.search-results li {
+    list-style: none;
+    padding: 1px 6px;
+    line-height: 24px;
+    color: #666;
+    transition: background-color 0.5s;
+}
+
+.search-results li a {
+    color: #666;
+}
+
+.search-results li .product-number {
+    float: right;
+    color: #aaa;
+}
+
+.search-results li:hover {
+    background-color: #f5f5f5
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 {
+            background: red;
+        }
+        
+        .item2 {
+            background-color: brown;
+        }
+        
+        .item3 {
+            background-color: chocolate;
+        }
+        
+        .item4 {
+            background-color: cornflowerblue;
+        }
+        
+        .wrapper {
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/swiper.css">
+</head>
+
+<body>
+    <div class="wrapper"></div>
+
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/swiper.js"></script>
+
+    <script>
+        $('.wrapper').swiper({
+            width: 500,
+            height: 400,
+            domList: $('.item'),
+            times: 1000,
+            showSpots: true,
+            type: 'animate',
+            isAuto: true,
+            changeBtn: 'hover',
+            spotsPosition: 'left',
+            // spotStyle: {
+            //     width: 20,
+            //     height: 20,
+            //     background: '#fff'
+            // },
+            // selectedColor: '#000'
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-size: 12px;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+.shortcut {
+    border-bottom: 1px solid #dddddd;
+    background-color: #e3e4e5;
+    height: 30px;
+}
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    height: 140px;
+}
+
+.infomation {
+    height: 480px;
+    /* background-color: red; */
+}
+
+.seckill {
+    height: 260px;
+    /* background-color: yellowgreen; */
+}
+
+.w {
+    width: 1190px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'jd-icon';
+    /* project id 2295311 */
+    src: url('http://at.alicdn.com/t/font_2295311_57zizm83a4h.eot');
+    src: url('http://at.alicdn.com/t/font_2295311_57zizm83a4h.eot?#iefix') format('embedded-opentype'), url('http://at.alicdn.com/t/font_2295311_57zizm83a4h.woff2') format('woff2'), url('http://at.alicdn.com/t/font_2295311_57zizm83a4h.woff') format('woff'), url('http://at.alicdn.com/t/font_2295311_57zizm83a4h.ttf') format('truetype'), url('http://at.alicdn.com/t/font_2295311_57zizm83a4h.svg#iconfont') format('svg');
+}
+
+.jd-icon {
+    font-family: 'jd-icon';
+    font-size: 12px;
+}
