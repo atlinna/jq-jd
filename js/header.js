@@ -51,4 +51,34 @@ $('.search-box').mouseleave(function() {
     }, 500)
 }).mouseenter(function() {
     clearTimeout(timer)
-}, 500)
+})
+
+
+var startTime = 0;
+$('.logo').hover(function() {
+    startTime = new Date().getTime()
+    if (!$('.logo_scene_lk').hasClass('logo_scene_isPlay')) {
+        $('.logo_scene_lk').addClass('logo_scene_isPlay')
+            .css({
+                backgroundImage: 'url(//img1.360buyimg.com/da/jfs/t1/28596/34/11640/157517/5c90a874E18020832/df35ae12bc6f605d.gif' + '?v=' + new Date().getTime() + ')'
+            })
+            .fadeIn()
+        setTimeout(function() {
+            $('.logo_scene_title').fadeIn()
+            $('.logo_scene_btn').fadeIn()
+        }, 2300)
+    }
+}, function() {
+    var endTime = new Date().getTime()
+    if (endTime - startTime > 4000) {
+        $('.logo_scene_lk').removeClass('logo_scene_isPlay').fadeOut()
+        $('.logo_scene_title').fadeOut()
+        $('.logo_scene_btn').fadeOut()
+    } else {
+        setTimeout(function() {
+            $('.logo_scene_lk').removeClass('logo_scene_isPlay').fadeOut()
+            $('.logo_scene_title').fadeOut()
+            $('.logo_scene_btn').fadeOut()
+        }, startTime + 4000 - endTime)
+    }
+})

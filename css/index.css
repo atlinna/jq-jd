@@ -6,6 +6,11 @@ body {
 
 a {
     text-decoration: none;
+    color: #333;
+}
+
+i {
+    font-style: normal;
 }
 
 ul,
@@ -36,6 +41,7 @@ dd {
 
 .seckill {
     height: 260px;
+    margin-top: 15px;
     /* background-color: yellowgreen; */
 }
 
